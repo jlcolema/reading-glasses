@@ -1,0 +1,52 @@
+.product-meta {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-meta:has(.product-badge--sale) {
+  justify-content: flex-end;
+}
+
+.product-badge {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+.product-meta__country {
+  margin-top: 0;
+  margin-right: 50px;
+}
+
+@media (max-width: 1023px) {
+  .product-meta__country {
+    margin-right: 20px;
+  }
+}
+
+.product__price-brand-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: var(--space-md);;
+}
+
+.product-meta__brand-link {
+  display: flex;
+  height: auto;
+}
+
+.product-meta__brand-link svg {
+  max-width: 85%;
+}
+
+.product__price {
+  margin-top: 0;
+  line-height: 1;
+}
+
+.product__sale-comparison {
+  margin-top: var(--space-xs);
+}
